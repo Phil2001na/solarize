@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Solarize — Namibia's #1 Solar Solutions | Windhoek</title>
+  <meta name="description" content="Solarize is Windhoek's solar store: solar WiFi & 4G security cameras, panels, inverters, batteries, power stations and complete off-grid home kits. Based in Ausspannplatz. Load-shedding proof." />
+  <meta name="theme-color" content="#0B4D2C" />
+  <link rel="canonical" href="https://solarize.com.na/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Solarize — Namibia's #1 Solar Solutions" />
+  <meta property="og:description" content="Solar cameras, panels, inverters, batteries & complete off-grid kits. Windhoek, Ausspannplatz." />
+  <meta property="og:image" content="images/og.jpg" />
+  <meta property="og:locale" content="en_NA" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon (inline SVG — sun mark) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B4D2C'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23F5B700'/%3E%3Cg stroke='%236FBF1A' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M16 3v3M16 26v3M3 16h3M26 16h3M6.5 6.5l2 2M23.5 23.5l-2-2M25.5 6.5l-2 2M8.5 23.5l-2 2'/%3E%3C/g%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B4D2C'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23F5B700'/%3E%3C/svg%3E" />
+
+  <!-- Fonts: Space Grotesk (display) + Manrope (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+
+  <link rel="stylesheet" href="css/style.css?v=1" />
+
+  <!-- SEO: LocalBusiness / Store structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Solarize",
+    "description": "Solar solutions store in Windhoek — solar security cameras, panels, inverters, batteries, power stations and complete off-grid home kits.",
+    "image": "https://solarize.com.na/images/og.jpg",
+    "url": "https://solarize.com.na/",
+    "telephone": "+264-81-000-0000",
+    "priceRange": "N$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ausspannplatz",
+      "addressLocality": "Windhoek",
+      "addressCountry": "NA"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/Solarize",
+      "https://www.instagram.com/Solarize5"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== Loader ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <span class="loader__sun"></span>
+      <span class="loader__word">SOLARIZE</span>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="brand" aria-label="Solarize home">
+        <span class="brand__sun" aria-hidden="true"></span>
+        <span class="brand__name">SOLARIZE</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#products">Products</a>
+        <a href="#why">Why solar</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <!-- PLACEHOLDER: WhatsApp number -->
+        <a class="btn btn--solid nav__cta" href="https://wa.me/264810000000?text=Hi%20Solarize%2C%20I%27d%20like%20a%20quote" target="_blank" rel="noopener">Get a quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="overlay">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Mobile overlay ===== -->
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <nav class="overlay__links" aria-label="Mobile">
+      <a href="#products">Products</a>
+      <a href="#featured">Featured</a>
+      <a href="#why">Why solar</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn--solid overlay__cta" href="https://wa.me/264810000000?text=Hi%20Solarize%2C%20I%27d%20like%20a%20quote" target="_blank" rel="noopener">Get a quote on WhatsApp</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="top">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <span class="eyebrow reveal">Windhoek · Ausspannplatz</span>
+          <h1 class="hero__title reveal">Power your home,<br/>off the grid.</h1>
+          <p class="hero__sub reveal">Namibia's number-one solar store. Solar security cameras, panels, inverters, batteries and complete off-grid kits — load-shedding proof, sun-powered, installed local.</p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--solid" href="#products">Shop products</a>
+            <a class="btn btn--ghost" href="#pricing">View packages</a>
+          </div>
+          <ul class="hero__chips reveal" aria-label="Highlights">
+            <li><span class="dot"></span> Local Windhoek support</li>
+            <li><span class="dot"></span> Warranty on every unit</li>
+            <li><span class="dot"></span> Off-grid ready</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__card">
+            <img class="hero__ph" src="images/p04.webp?v=1" width="470" height="480" fetchpriority="high"
+                 alt="Solarize Smart Solar WiFi Camera — dual-lens solar security camera"
+                 onerror="this.classList.add('img-fallback')" />
+            <!-- power-flow signature motif -->
+            <div class="powerflow" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="hero__badge">
+              <strong>N$2449</strong>
+              <small>Smart Solar WiFi Camera</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Marquee strip ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Solar Cameras</span><span class="sep">✦</span>
+        <span>Panels</span><span class="sep">✦</span>
+        <span>Inverters</span><span class="sep">✦</span>
+        <span>Batteries</span><span class="sep">✦</span>
+        <span>Power Stations</span><span class="sep">✦</span>
+        <span>Solar Lighting</span><span class="sep">✦</span>
+        <span>Off-Grid Kits</span><span class="sep">✦</span>
+        <span>Solar Cameras</span><span class="sep">✦</span>
+        <span>Panels</span><span class="sep">✦</span>
+        <span>Inverters</span><span class="sep">✦</span>
+        <span>Batteries</span><span class="sep">✦</span>
+        <span>Power Stations</span><span class="sep">✦</span>
+        <span>Solar Lighting</span><span class="sep">✦</span>
+        <span>Off-Grid Kits</span><span class="sep">✦</span>
+      </div>
+    </div>
+
+    <!-- ===== Stats band (dark) ===== -->
+    <section class="stats">
+      <div class="stats__inner">
+        <div class="stat reveal">
+          <span class="stat__num" data-count="1200">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">Systems installed</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="8">0</span>
+          <span class="stat__label">Product categories</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="24">0</span><span class="stat__plus">/7</span>
+          <span class="stat__label">Solar runs day & night</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="100">0</span><span class="stat__plus">%</span>
+          <span class="stat__label">Windhoek based & backed</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Products catalog ===== -->
+    <section class="section" id="products">
+      <div class="section__head">
+        <span class="eyebrow reveal">The store</span>
+        <h2 class="section__title reveal">Everything solar, under one sun.</h2>
+        <p class="section__lead reveal">From a single solar camera to a whole home off the grid — browse the range and message us to order.</p>
+      </div>
+
+      <div class="cards" id="catalog">
+        <!-- 8 product categories -->
+        <article class="card reveal" tabindex="0">
+          <div class="card__media ph" data-label="Solar cameras"></div>
+          <div class="card__body">
+            <h3>Solar Security Cameras</h3>
+            <p>Off-grid WiFi & 4G surveillance. No wiring, no power bill.</p>
+            <span class="card__from">From N$1649</span>
+          </div>
+        </article>
+        <article class="card reveal" tabindex="0">
+          <div class="card__media ph" data-label="Solar panels"></div>
+          <div class="card__body">
+            <h3>Solar Panels</h3>
+            <p>Mono & poly panels in every wattage for homes and farms.</p>
+            <span class="card__from">Request a quote</span>
+          </div>
+        </article>
+        <article class="card reveal" tabindex="0">
+          <div class="card__media ph" data-label="Inverters"></div>
+          <div class="card__body">
+            <h3>Inverters</h3>
+            <p>Pure sine-wave & hybrid inverters that keep the lights on.</p>
+            <span class="card__from">Request a quote</span>
+          </div>
+        </article>
+        <article class="card reveal" tabindex="0">
+          <div class="card__media ph" data-label="Batteries"></div>
+          <div class="card__body">
+            <h3>Batteries</h3>
+            <p>Lithium & gel storage so the sun powers your nights too.</p>
+            <span class="card__from">Request a quote</span>
+          </div>
+        </article>
+        <article class="card reveal" tabindex="0">
+          <div class="card__media ph" data-label="Power stations"></div>
+          <div class="card__body">
+            <h3>Power Stations</h3>
+            <p>Portable backup power for load-shedding, camping & sites.</p>
+            <span class="card__from">Request a quote</span>
+          </div>
+        </article>
+        <article class="card reveal" tabindex="0">
+          <div class="card__media ph" data-label="Solar lighting"></div>
+          <div class="card__body">
+            <h3>Solar Lighting</h3>
+            <p>Street, flood & garden lights that charge themselves daily.</p>
+            <span class="card__from">Request a quote</span>
+          </div>
+        </article>
+        <article class="card reveal" tabindex="0">
+          <div class="card__media ph" data-label="Off-grid kits"></div>
+          <div class="card__body">
+            <h3>Off-Grid Home Kits</h3>
+            <p>Panel + inverter + battery bundles, sized to your home.</p>
+            <span class="card__from">Custom build</span>
+          </div>
+        </article>
+        <article class="card reveal" tabindex="0">
+          <div class="card__media ph" data-label="Accessories"></div>
+          <div class="card__body">
+            <h3>Accessories</h3>
+            <p>Charge controllers, cables, mounts & everything between.</p>
+            <span class="card__from">In stock</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Featured products (real prices) ===== -->
+    <section class="section section--tint" id="featured">
+      <div class="section__head">
+        <span class="eyebrow reveal">In stock now</span>
+        <h2 class="section__title reveal">Best-selling solar cameras</h2>
+        <p class="section__lead reveal">Self-powered surveillance — mount it anywhere the sun reaches. Tap a camera to order on WhatsApp.</p>
+      </div>
+
+      <div class="products">
+        <!-- Real products & prices from Solarize -->
+        <article class="product reveal">
+          <img class="product__media" src="images/p01.webp?v=1" width="580" height="460" loading="lazy"
+               alt="Smart Net Solar WiFi Camera with solar panel" onerror="this.classList.add('img-fallback')" />
+          <div class="product__body">
+            <h3 class="product__name">Smart Net Solar WiFi Camera</h3>
+            <p class="product__desc">Pan-tilt WiFi camera with its own solar panel. Full-colour night vision.</p>
+            <div class="product__foot">
+              <span class="product__price">N$1649</span>
+              <a class="btn btn--mini" href="https://wa.me/264810000000?text=Hi%20Solarize%2C%20I%20want%20the%20Smart%20Net%20Solar%20WiFi%20Camera%20(N%241649)" target="_blank" rel="noopener">Order</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <img class="product__media" src="images/p02.webp?v=1" width="520" height="440" loading="lazy"
+               alt="Solar WiFi Camera, dual-lens with solar panel" onerror="this.classList.add('img-fallback')" />
+          <div class="product__body">
+            <h3 class="product__name">Solar WiFi Camera</h3>
+            <p class="product__desc">Dual-lens solar WiFi camera with wide coverage and live app view.</p>
+            <div class="product__foot">
+              <span class="product__price">N$1799</span>
+              <a class="btn btn--mini" href="https://wa.me/264810000000?text=Hi%20Solarize%2C%20I%20want%20the%20Solar%20WiFi%20Camera%20(N%241799)" target="_blank" rel="noopener">Order</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <img class="product__media" src="images/p03.webp?v=1" width="470" height="510" loading="lazy"
+               alt="Solar Camera 4G with solar panel for remote sites" onerror="this.classList.add('img-fallback')" />
+          <div class="product__body">
+            <h3 class="product__name">Solar Camera 4G</h3>
+            <p class="product__desc">No WiFi? No problem. SIM-powered 4G camera for farms & remote sites.</p>
+            <div class="product__foot">
+              <span class="product__price">N$2299</span>
+              <a class="btn btn--mini" href="https://wa.me/264810000000?text=Hi%20Solarize%2C%20I%20want%20the%20Solar%20Camera%204G%20(N%242299)" target="_blank" rel="noopener">Order</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <img class="product__media" src="images/p04.webp?v=1" width="470" height="480" loading="lazy"
+               alt="Smart Solar WiFi Camera, dual-screen flagship with motion tracking" onerror="this.classList.add('img-fallback')" />
+          <div class="product__body">
+            <h3 class="product__name">Smart Solar WiFi Camera</h3>
+            <p class="product__desc">Dual-screen flagship with motion tracking and a big solar panel.</p>
+            <div class="product__foot">
+              <span class="product__price">N$2449</span>
+              <a class="btn btn--mini" href="https://wa.me/264810000000?text=Hi%20Solarize%2C%20I%20want%20the%20Smart%20Solar%20WiFi%20Camera%20(N%242449)" target="_blank" rel="noopener">Order</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Why Solarize ===== -->
+    <section class="section" id="why">
+      <div class="why">
+        <div class="why__head">
+          <span class="eyebrow reveal">Why go solar</span>
+          <h2 class="section__title reveal">Sun's free. Make it work for you.</h2>
+          <p class="section__lead reveal">Namibia gets some of the best sunlight on earth. Solarize turns it into security, savings and power that never goes off.</p>
+        </div>
+        <div class="why__grid">
+          <div class="benefit reveal">
+            <span class="benefit__ico" aria-hidden="true">⚡</span>
+            <h3>Load-shedding proof</h3>
+            <p>Keep your lights, fridge, WiFi and cameras running when the grid drops.</p>
+          </div>
+          <div class="benefit reveal">
+            <span class="benefit__ico" aria-hidden="true">↓</span>
+            <h3>Cut your power bill</h3>
+            <p>Generate your own electricity and watch your monthly NamPower bill shrink.</p>
+          </div>
+          <div class="benefit reveal">
+            <span class="benefit__ico" aria-hidden="true">☀</span>
+            <h3>Off-grid ready</h3>
+            <p>Perfect for farms, lodges and plots with no reliable line power.</p>
+          </div>
+          <div class="benefit reveal">
+            <span class="benefit__ico" aria-hidden="true">★</span>
+            <h3>Local support</h3>
+            <p>Based in Ausspannplatz — real people, real warranty, real follow-up.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Pricing ===== -->
+    <section class="section section--tint" id="pricing">
+      <div class="section__head">
+        <span class="eyebrow reveal">Packages</span>
+        <h2 class="section__title reveal">Solar kits, sized to your home.</h2>
+        <p class="section__lead reveal">Indicative starting prices — every install is quoted to your roof and usage. Message us for an exact figure.</p>
+      </div>
+
+      <div class="plans">
+        <article class="plan reveal">
+          <h3 class="plan__name">Starter Backup</h3>
+          <p class="plan__for">Lights, WiFi & essentials through an outage.</p>
+          <div class="plan__price"><span class="plan__from">from</span> N$14,900</div>
+          <ul class="plan__list">
+            <li>Compact panel + inverter</li>
+            <li>Lithium battery backup</li>
+            <li>Runs essentials for hours</li>
+            <li>Installed in Windhoek</li>
+          </ul>
+          <a class="btn btn--ghost plan__cta" href="https://wa.me/264810000000?text=Hi%20Solarize%2C%20I%27m%20interested%20in%20the%20Starter%20Backup%20package" target="_blank" rel="noopener">Enquire</a>
+        </article>
+
+        <article class="plan plan--featured reveal">
+          <span class="plan__tag">Most popular</span>
+          <h3 class="plan__name">Home Off-Grid</h3>
+          <p class="plan__for">Whole-home solar that shrugs off load-shedding.</p>
+          <div class="plan__price"><span class="plan__from">from</span> N$49,900</div>
+          <ul class="plan__list">
+            <li>Full panel array</li>
+            <li>Hybrid inverter</li>
+            <li>Large lithium storage bank</li>
+            <li>Day & night independence</li>
+          </ul>
+          <a class="btn btn--solid plan__cta" href="https://wa.me/264810000000?text=Hi%20Solarize%2C%20I%27m%20interested%20in%20the%20Home%20Off-Grid%20package" target="_blank" rel="noopener">Get a quote</a>
+        </article>
+
+        <article class="plan reveal">
+          <h3 class="plan__name">Business / Farm</h3>
+          <p class="plan__for">Lodges, farms & businesses going fully solar.</p>
+          <div class="plan__price">Custom</div>
+          <ul class="plan__list">
+            <li>Site survey & load study</li>
+            <li>Scaled array + storage</li>
+            <li>Remote 4G monitoring</li>
+            <li>Maintenance plan</li>
+          </ul>
+          <a class="btn btn--ghost plan__cta" href="https://wa.me/264810000000?text=Hi%20Solarize%2C%20I%27d%20like%20a%20custom%20business%2Ffarm%20solar%20quote" target="_blank" rel="noopener">Book a survey</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Gallery ===== -->
+    <section class="section" id="gallery">
+      <div class="section__head">
+        <span class="eyebrow reveal">Out in the field</span>
+        <h2 class="section__title reveal">Installs across Namibia</h2>
+        <p class="section__lead reveal">Rooftops, farms and businesses we've taken off the grid.</p>
+      </div>
+      <div class="gallery">
+        <!-- PLACEHOLDER: install photos -->
+        <button class="gallery__item ph reveal" data-label="Install 01" aria-label="View install photo 1"></button>
+        <button class="gallery__item ph reveal" data-label="Install 02" aria-label="View install photo 2"></button>
+        <button class="gallery__item ph reveal" data-label="Install 03" aria-label="View install photo 3"></button>
+        <button class="gallery__item ph reveal" data-label="Install 04" aria-label="View install photo 4"></button>
+        <button class="gallery__item ph reveal" data-label="Install 05" aria-label="View install photo 5"></button>
+        <button class="gallery__item ph reveal" data-label="Install 06" aria-label="View install photo 6"></button>
+      </div>
+    </section>
+
+    <!-- ===== CTA / Quote ===== -->
+    <section class="cta" id="quote">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="cta__inner reveal">
+        <h2 class="cta__title">Ready to harness the sun?</h2>
+        <p class="cta__sub">Tell us what you need and we'll send a tailored quote — usually same day.</p>
+        <form class="quote" id="quoteForm" novalidate>
+          <div class="quote__row">
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" id="qName" autocomplete="name" placeholder="Your name" required />
+            </label>
+            <label class="field">
+              <span>What are you after?</span>
+              <select name="interest" id="qInterest" required>
+                <option value="" disabled selected>Choose a product</option>
+                <option>Solar security camera</option>
+                <option>Solar panels</option>
+                <option>Inverter</option>
+                <option>Battery storage</option>
+                <option>Power station</option>
+                <option>Solar lighting</option>
+                <option>Full off-grid kit</option>
+                <option>Not sure — need advice</option>
+              </select>
+            </label>
+          </div>
+          <label class="field">
+            <span>Message <small>(optional)</small></span>
+            <textarea name="msg" id="qMsg" rows="3" placeholder="e.g. 3-bedroom house in Klein Windhoek, want backup for load-shedding"></textarea>
+          </label>
+          <button type="submit" class="btn btn--solid quote__submit">Send on WhatsApp</button>
+          <p class="quote__note">Opens WhatsApp with your details pre-filled — no payment, no commitment.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Contact + map ===== -->
+    <section class="section" id="contact">
+      <div class="contact">
+        <div class="contact__info">
+          <span class="eyebrow reveal">Visit us</span>
+          <h2 class="section__title reveal">Come see the sun at work.</h2>
+          <ul class="contact__list reveal">
+            <li>
+              <span class="contact__k">Where</span>
+              <span class="contact__v">Ausspannplatz, Windhoek, Namibia</span>
+            </li>
+            <li>
+              <span class="contact__k">Hours</span>
+              <span class="contact__v">Mon–Fri 08:00–17:30 · Sat 09:00–13:00</span>
+            </li>
+            <li>
+              <span class="contact__k">WhatsApp</span>
+              <!-- PLACEHOLDER: real number -->
+              <span class="contact__v"><a href="https://wa.me/264810000000" target="_blank" rel="noopener">+264 81 000 0000</a></span>
+            </li>
+            <li>
+              <span class="contact__k">Email</span>
+              <!-- PLACEHOLDER: real email -->
+              <span class="contact__v"><a href="mailto:hello@solarize.com.na">hello@solarize.com.na</a></span>
+            </li>
+            <li>
+              <span class="contact__k">Social</span>
+              <span class="contact__v">
+                <a href="https://www.facebook.com/Solarize" target="_blank" rel="noopener">Facebook</a> ·
+                <a href="https://www.instagram.com/Solarize5" target="_blank" rel="noopener">@Solarize5</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="contact__map reveal">
+          <!-- Ausspannplatz, Windhoek -->
+          <iframe
+            title="Map to Solarize, Ausspannplatz Windhoek"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=17.0760%2C-22.5840%2C17.1010%2C-22.5680&layer=mapnik&marker=-22.5760%2C17.0885"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="brand__sun" aria-hidden="true"></span>
+        <span class="brand__name">SOLARIZE</span>
+        <p class="footer__tag">Your number one solar solutions. Windhoek, Namibia.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#products">Products</a>
+        <a href="#featured">Cameras</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/Solarize" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/Solarize5" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>© <span id="year">2026</span> Solarize. All rights reserved.</span>
+      <span>Sun-powered in Namibia ☀</span>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-fab" href="https://wa.me/264810000000?text=Hi%20Solarize%2C%20I%27d%20like%20some%20info" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.8.9 3.8 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.3l-.4-.2-4.9 1 1-4.7-.2-.4c-.9-1.5-1.4-3.2-1.4-5 0-5.3 4.3-9.6 9.6-9.6s9.6 4.3 9.6 9.6-4.3 9.6-9.6 9.6zm5.3-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">×</button>
+    <div class="lightbox__stage" id="lightboxStage"></div>
+  </div>
+
+  <script src="js/main.js?v=1"></script>
+</body>
+</html>
