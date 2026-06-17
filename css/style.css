@@ -81,7 +81,9 @@ ul { list-style: none; }
 }
 /* real images filling tiles */
 img.product__media { width: 100%; object-fit: cover; }
+img.card__media { width: 100%; object-fit: cover; }
 img.hero__ph { width: 100%; height: 100%; object-fit: cover; }
+.gallery__item img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .img-fallback { color: transparent; }
 
 /* =========================================================
@@ -399,7 +401,8 @@ body.menu-open .overlay__links a:nth-child(5){ transition-delay:.30s; }
    CTA / quote
    ========================================================= */
 .cta { position: relative; background: linear-gradient(160deg, var(--forest), var(--forest-2)); color: var(--white); padding: clamp(60px, 9vw, 110px) var(--gut); overflow: hidden; }
-.cta__glow { position: absolute; bottom: -30%; left: 10%; width: 50vw; height: 50vw; max-width: 600px; max-height: 600px; background: radial-gradient(circle, rgba(245,183,0,.3), transparent 65%); pointer-events: none; }
+.cta__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .22; z-index: 0; }
+.cta__glow { position: absolute; bottom: -30%; left: 10%; width: 50vw; height: 50vw; max-width: 600px; max-height: 600px; background: radial-gradient(circle, rgba(245,183,0,.3), transparent 65%); pointer-events: none; z-index: 0; }
 .cta__inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; text-align: center; }
 .cta__title { font-family: var(--display); font-weight: 700; font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -.02em; }
 .cta__sub { color: rgba(255,255,255,.82); margin: 12px auto 32px; max-width: 46ch; }
